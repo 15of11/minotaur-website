@@ -13,7 +13,7 @@ function Footer() {
                         Minotaur
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This is a cool website
+                        This is a footer
                     </Col>
                 </Row>
             </Container>
