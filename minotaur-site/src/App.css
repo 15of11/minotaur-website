@@ -28,6 +28,12 @@
   color: #61dafb;
 }
 
+.test {
+  width: 1000 !important;
+  padding: 10 !important;
+  color: red;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

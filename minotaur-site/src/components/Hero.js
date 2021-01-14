@@ -3,6 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/esm/ListGroup';
 
 function Hero(props) {
     return(
@@ -15,6 +16,36 @@ function Hero(props) {
                         { props.text && <h3 className="lead font-weight-light">{props.text}</h3> }
                     </Col>
                 </Row>
+                <Container className="test">
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="test">Monday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="test">Tuesday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="test">Wednesday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="padding-2">Thursday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="">Friday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="">Saturday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                    <ListGroup horizontal className="justify-content-center">
+                        <ListGroup.Item className="">Sunday</ListGroup.Item>
+                        <ListGroup.Item>10-6</ListGroup.Item>
+                    </ListGroup>
+                </Container>
             </Container>
         </Jumbotron>
 
