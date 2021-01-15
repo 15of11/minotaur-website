@@ -16,37 +16,17 @@ function Hero(props) {
                         { props.text && <h3 className="lead font-weight-light">{props.text}</h3> }
                     </Col>
                 </Row>
-                <Container className="test">
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="test">Monday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="test">Tuesday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="test">Wednesday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="padding-2">Thursday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="">Friday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="">Saturday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                    <ListGroup horizontal className="justify-content-center">
-                        <ListGroup.Item className="">Sunday</ListGroup.Item>
-                        <ListGroup.Item>10-6</ListGroup.Item>
-                    </ListGroup>
-                </Container>
             </Container>
+            <br></br>
+                    <ListGroup  as="h5" variant="flush" style={{width: '100%'}}>
+                        <ListGroup.Item className="test">Monday | 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Tuesday | 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Wednesday | 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Thursday 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Friday 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Saturday 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Sunday 10-6</ListGroup.Item>
+                    </ListGroup>
         </Jumbotron>
 
     );

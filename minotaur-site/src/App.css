@@ -29,9 +29,15 @@
 }
 
 .test {
-  width: 1000 !important;
-  padding: 10 !important;
+  justify-content: center;
   color: red;
+}
+
+h5 {
+  color:blue;
+  
+  justify-content: center; /* this does not work */
+  align-items: center; /* this does not work */
 }
 
 @keyframes App-logo-spin {
