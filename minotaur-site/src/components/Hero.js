@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/esm/ListGroup';
+import Table from 'react-bootstrap/esm/Table';
 
 function Hero(props) {
     return(
@@ -19,14 +20,31 @@ function Hero(props) {
             </Container>
             <br></br>
                     <ListGroup  as="h5" variant="flush" style={{width: '100%'}}>
-                        <ListGroup.Item className="test">Monday | 10-6</ListGroup.Item>
-                        <ListGroup.Item className="">Tuesday | 10-6</ListGroup.Item>
-                        <ListGroup.Item className="">Wednesday | 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Monday 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Tuesday 10-6</ListGroup.Item>
+                        <ListGroup.Item className="">Wednesday 10-6</ListGroup.Item>
                         <ListGroup.Item className="">Thursday 10-6</ListGroup.Item>
                         <ListGroup.Item className="">Friday 10-6</ListGroup.Item>
                         <ListGroup.Item className="">Saturday 10-6</ListGroup.Item>
                         <ListGroup.Item className="">Sunday 10-6</ListGroup.Item>
                     </ListGroup>
+                    <Row className="justify-content-center py-5">
+                        <Col md={2} sm={4}>
+                            <Table striped bordered size="sm">
+                                <tbody>
+                                    <tr>
+                                        <td>Monday</td>
+                                        <td>10-6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday</td>
+                                        <td>10-6</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                        </Col>
+                    </Row>
+                    
         </Jumbotron>
 
     );
